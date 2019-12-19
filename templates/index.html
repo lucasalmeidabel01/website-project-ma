@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}MangoApollon{% endblock %}
+
+{% block page_content %}
+<html>
+	<head>
+		<title>MangoApollon-Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{{  url_for('static',filename='css/style.css') }}">
+	</head>
+
+	<body>
+		<div class="jumbotron">
+			<h1>MangoApollon</h1>
+			<p>Trend-oriented data miner</p>
+		</div>
+		<div class=container>
+			<h2>Questions and Answers</h2>
+		</div>
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1.Who am I?</a>
+					</h4>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse-in">
+					<div class="panel-body">I am MangoApollon. "MangoApollon" is a pseudonymn I created to make data mining. It comes from "Mango", the fruit,and "Apollo", the greek god.</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2.What do I do?</a>
+					</h4>
+				</div>
+				<div id="collapse2" class="panel-collapse collapse-in">
+					<div class="panel-body">I am a data miner. I collect large amounts of data and find patterns in them.
+					To find patterns, I use tools as machine learning and statistics.</div>
+				</div> 
+			</div>
+			<div class="panel panel-default">
+				<div class="panel panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3.What am I looking for?</a>
+					</h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse-in">
+					<div class="panel-body">Fashion and Entertainment Industries data.</div>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
+{% endblock %}

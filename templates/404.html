@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}MangoApollon - Page Not Found{% endblock %}
+
+{% block page_content %}
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{{  url_for('static',filename='css/style.css') }}">
+	</head>
+	<body>
+		<div class="page-header">
+			<h1>Not Found</h1>
+		</div>
+	</body>
+</html>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}MangoApollon{% endblock %}
+
+{% block page_content %}
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{{  url_for('static',filename='css/style.css') }}">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1>MangoApollon</h1>
+			<p>Trend-oriented data miner</p>
+		</div>
+		<div class="container">
+			<h2>Contacts:</h2>
+		</div>
+		<main>
+			Twitter: @MangoApollon
+		</main>
+	</body>
+</html>
+{% endblock %}
