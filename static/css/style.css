@@ -1,0 +1,14 @@
+
+body {
+	font-family: Irrep;
+	background-color: #f2f0e8;
+ }
+
+.jumbotron {
+	background-color: #d7c56e;
+	color: white;
+}
+
+h1, p {
+	text-align: center;
+}
